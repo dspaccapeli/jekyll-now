@@ -31,7 +31,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
   color: $darkerGray;
   font-weight: bold;
 
@@ -69,7 +69,7 @@ p {
 }
 
 a {
-  color: $blue;
+  color: #1ba77e;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
@@ -156,7 +156,6 @@ img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
 
   @include mobile {
     text-align: center;
@@ -165,13 +164,15 @@ img {
 
 .site-avatar {
   float: left;
-  width: 70px;
+  width: auto;
   height: 70px;
   margin-right: 15px;
 
   @include mobile {
     float: none;
-    display: block;
+    display: none;
+    width: auto;
+    height: 70px;
     margin: 0 auto;
   }
 
